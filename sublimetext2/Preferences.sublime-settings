@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Source Code Pro",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Git",
+		"Gist",
+		"emmet-sublime"
+	],
+	"soda_folder_icons": true,
+	"theme": "Soda Dark.sublime-theme",
+	"word_wrap": false
+}

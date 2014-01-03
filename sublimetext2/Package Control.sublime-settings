@@ -1,0 +1,28 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"AngularJS",
+		"CoffeeScript",
+		"Dayle Rees Color Schemes",
+		"Emmet",
+		"Gist",
+		"Git",
+		"HTML Compressor",
+		"Indent XML",
+		"Jade",
+		"JsFormat",
+		"JSHint",
+		"Package Control",
+		"PowerShell",
+		"Razor",
+		"Sass",
+		"SASS Build",
+		"Stylus",
+		"SublimeLinter",
+		"Tag",
+		"Theme - Soda",
+		"VBScript"
+	],
+	"timeout": 5
+}
