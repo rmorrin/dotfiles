@@ -6,4 +6,4 @@ subl="C:\Program Files\Sublime Text 2\sublime_text.exe" $*
 clear=cls
 gs=git status
 gd=git diff
-ii=start
+ii=start $*
