@@ -1,8 +1,11 @@
 {
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
 	"draw_white_space": "all",
 	"font_face": "Source Code Pro",
 	"font_size": 11,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -10,6 +13,8 @@
 		"Gist",
 		"emmet-sublime"
 	],
+	"line-padding-bottom": 1,
+	"line-padding-top": 1,
 	"soda_folder_icons": true,
 	"theme": "Soda Dark.sublime-theme",
 	"word_wrap": false
