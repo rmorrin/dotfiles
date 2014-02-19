@@ -17,5 +17,6 @@
 	"line-padding-top": 1,
 	"soda_folder_icons": true,
 	"theme": "Soda Dark.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
 }
