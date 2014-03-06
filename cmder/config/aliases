@@ -1,5 +1,5 @@
 e.=explorer .
-gl=git log --oneline --all --graph --decorate  $*
+gl=git lg $*
 ls=ls --color $*
 pwd=cd
 subl="C:\Program Files\Sublime Text 2\sublime_text.exe" $*
