@@ -8,4 +8,5 @@ vs13="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\VWDExpress
 clear=cls
 gs=git status $*
 gd=git diff $*
+gdt = git difftool $*
 ii=start $*
