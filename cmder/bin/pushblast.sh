@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+#
+# Credit to:
+#   https://github.com/alebcay/pushblast
 
 if [[ $1 = "" ]] ; then
   echo "usage: pushblast \"command_to_be_executed\""
