@@ -1,0 +1,31 @@
+[user]
+	name = Ryan Morrin
+	email = ryanmorrin@gmail.com
+[merge]
+	tool = kdiff3
+[core]
+	autocrlf = true
+	editor = vim
+	whitespace = trailing-space,space-before-tab
+	filemode = false
+[apply]
+	whitespace = fix
+[http]
+	postBuffer = 524288000
+[mergetool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+	cmd = \"C:/Program Files (x86)/KDiff3/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+[push]
+	default = simple
+[color "status"]
+	changed = magenta normal bold
+	untracked = magenta normal bold
+[alias]
+	lg = log --color --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	pushall = !git remote | xargs -l git push
+[commit]
+	template = C:/Users/Ryan/.gitmessage.txt
