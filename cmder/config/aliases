@@ -17,7 +17,6 @@ gco=git checkout $*
 gl=git lg $*
 gla=git lg --all $*
 ccat=pygmentize -g $*
-startssh=setup-ssh-agent
 subl="C:\Program Files\Sublime Text 2\sublime_text.exe" $*
 vs12="C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\VWDExpress.exe" $*
 vs13="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe" $*
