@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2014-08-15 10:58:33" build="140404">
-			<value name="ColorTable00" type="dword" data="00222827"/>
+		<key name=".Vanilla" modified="2014-10-31 13:55:11" build="140404">
+			<value name="ColorTable00" type="dword" data="00211f1d"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
 			<value name="ColorTable03" type="dword" data="00a6831a"/>
@@ -116,7 +116,7 @@
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="f6"/>
+			<value name="AlphaValue" type="hex" data="ed"/>
 			<value name="AlphaValueSeparate" type="hex" data="01"/>
 			<value name="AlphaValueInactive" type="hex" data="ee"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
@@ -124,11 +124,11 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000096"/>
-			<value name="ConWnd Height" type="dword" data="0000001d"/>
+			<value name="ConWnd Width" type="dword" data="000000ba"/>
+			<value name="ConWnd Height" type="dword" data="00000028"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="dword" data="0000082b"/>
-			<value name="ConWnd Y" type="dword" data="000000f0"/>
+			<value name="ConWnd X" type="dword" data="000001d1"/>
+			<value name="ConWnd Y" type="dword" data="0000006d"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -214,7 +214,7 @@
 			<value name="StatusFontFace" type="string" data="Consolas"/>
 			<value name="StatusFontCharSet" type="dword" data="00000000"/>
 			<value name="StatusFontHeight" type="dword" data="0000000e"/>
-			<value name="StatusBar.Color.Back" type="dword" data="00222827"/>
+			<value name="StatusBar.Color.Back" type="dword" data="00211f1d"/>
 			<value name="StatusBar.Color.Light" type="dword" data="00ffffff"/>
 			<value name="StatusBar.Color.Dark" type="dword" data="00a0a0a0"/>
 			<value name="StatusBar.Hide.VCon" type="hex" data="00"/>
@@ -520,8 +520,8 @@
 				<key name="Apps" modified="2014-08-15 10:58:34" build="140404">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-				<key name="Colors" modified="2014-08-15 10:58:34" build="140404">
-			<key name="Palette1" modified="2014-08-15 10:58:34" build="140404">
+				<key name="Colors" modified="2014-10-31 13:55:11" build="140404">
+			<key name="Palette1" modified="2014-10-31 13:55:11" build="140404">
 					<value name="Name" type="string" data="Monokai"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
