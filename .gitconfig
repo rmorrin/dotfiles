@@ -35,5 +35,7 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	pushall = !git remote | xargs -l git push
+	last = log -1 --stat
+	unstage = reset HEAD --
 [commit]
 	template = C:/Users/Ryan/.gitmessage.txt
