@@ -1,6 +1,6 @@
 [user]
-	name = Ryan Morrin
-	email = ryanmorrin@gmail.com
+	name = AUTHORNAME
+	email = AUTHOREMAIL
 [core]
 	autocrlf = true
 	editor = vim
