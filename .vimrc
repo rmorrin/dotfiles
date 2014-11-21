@@ -29,7 +29,11 @@ colorscheme hybrid                              "
 let g:airline_theme = 'tomorrow'                "
 let g:airline_powerline_fonts = 1               "
 
+" pathogen
+execute pathogen#infect()
 
+" NERDTree mapping
+:map <F2> :NERDTreeToggle<CR>
 
 " stolen from msysgit vimrc
 "------------------------------------------------------------------------------
