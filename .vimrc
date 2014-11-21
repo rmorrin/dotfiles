@@ -19,17 +19,17 @@ set nocompatible                                " vi compatible is LAME
 set background=dark                             " Use colours that work well on a dark background (Console is usually black)
 syntax on                                       " turn syntax highlighting on by default
 set noshowmode                                  " disable showmode, vim-airline will show us this
+set term=xterm                                  "
+set t_Co=256                                    "
+set viminfo=                                    "
+let &t_AB="\e[48;5;%dm"                         "
+let &t_AF="\e[38;5;%dm"                         "
+let g:hybrid_use_XResources = 1                 "
+colorscheme hybrid                              "
+let g:airline_theme = 'tomorrow'                "
+let g:airline_powerline_fonts = 1               "
 
-fun! SetColours()
-    set term=xterm                      "
-    set t_Co=256                        "
-    let &t_AB="\e[48;5;%dm"             "
-    let &t_AF="\e[38;5;%dm"             "
-    colorscheme Tomorrow-Night-Eighties "
-endfun
 
-" use default colours when editing git commit messages
-autocmd BufNewFile,BufRead,BufEnter * if &filetype != "gitcommit" | call SetColours() | endif
 
 " show EOL type and last modified timestamp, right after the filename
 set statusline=%<%F%h%m%r\ [%{&ff}]\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})%=%l,%c%V\ %P
