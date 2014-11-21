@@ -31,9 +31,6 @@ let g:airline_powerline_fonts = 1               "
 
 
 
-" show EOL type and last modified timestamp, right after the filename
-set statusline=%<%F%h%m%r\ [%{&ff}]\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})%=%l,%c%V\ %P
-
 " stolen from msysgit vimrc
 "------------------------------------------------------------------------------
 " only do this part when compiled with support for autocommands.
