@@ -17,8 +17,8 @@ set vb                                          " turn on the "visual bell" - wh
 set ruler                                       " show the cursor position all the time
 set nocompatible                                " vi compatible is LAME
 set background=dark                             " Use colours that work well on a dark background (Console is usually black)
-set showmode                                    " show the current mode
 syntax on                                       " turn syntax highlighting on by default
+set noshowmode                                  " disable showmode, vim-airline will show us this
 
 fun! SetColours()
     set term=xterm                      "
