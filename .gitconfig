@@ -1,8 +1,6 @@
 [user]
 	name = Ryan Morrin
 	email = ryanmorrin@gmail.com
-[merge]
-	tool = kdiff3
 [core]
 	autocrlf = true
 	editor = vim
@@ -12,13 +10,23 @@
 	whitespace = fix
 [http]
 	postBuffer = 524288000
+[merge]
+	tool = kdiff3
 [mergetool "kdiff3"]
 	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepbackup = false
+	trustexistcode = true
 [diff]
 	guitool = kdiff3
 [difftool "kdiff3"]
 	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
 	cmd = \"C:/Program Files (x86)/KDiff3/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepbackup = false
+	trustexistcode = true
 [push]
 	default = simple
 [color "status"]
