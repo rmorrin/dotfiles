@@ -1,6 +1,7 @@
 ls=ls --color $*
 lsa=ls -a --color $*
 pwd=cd
+awk=sh awk $*
 e.=explorer .
 ii=start $*
 clear=cls
