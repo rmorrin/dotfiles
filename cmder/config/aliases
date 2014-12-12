@@ -6,6 +6,7 @@ e.=explorer .
 ii=start $*
 clear=cls
 gs=git status $*
+gst=git stash $*
 gd=git diff $*
 ga=git add $*
 gpu=git push $*
