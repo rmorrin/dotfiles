@@ -4,7 +4,7 @@ set autoindent                                  " auto indenting
 set number                                      " line numbers
 set nobackup                                    " get rid of anoying ~file
 set laststatus=2                                " make the last line where the status is two lines deep so you can see status always
-set paste
+"set paste
 set ignorecase
 set smartcase
 set incsearch                                   " search as you key in
