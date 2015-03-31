@@ -30,3 +30,4 @@ handle="%CMDER_ROOT%\..\Handle\handle.exe" $*
 procexp="%CMDER_ROOT%\..\ProcessExplorer\procexp.exe" $*
 pushall=pushblast "git pushall"
 urbandict=urbandictionary
+sublcli="C:\Program Files\Sublime Text 2\sublime_text.exe" $1 -new_console:s50H
