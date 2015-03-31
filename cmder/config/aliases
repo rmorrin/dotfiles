@@ -18,6 +18,7 @@ gca=git commit -a $*
 gco=git checkout $*
 gl=git lg $*
 gla=git lg --all $*
+gx = git ex
 ccat=pygmentize -g $*
 subl="C:\Program Files\Sublime Text 2\sublime_text.exe" $*
 vs12="C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\VWDExpress.exe" $*
