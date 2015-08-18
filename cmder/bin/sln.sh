@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sln=$(ls -a | grep -E '\.sln')
+sln=$(ls -a | grep -E '\.sln' | head -n1)
 
 
 if [ -n "$sln" ]; then
