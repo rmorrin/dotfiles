@@ -31,3 +31,4 @@ pushall=pushblast "git pushall"
 urbandict=urbandictionary
 sublcli="C:\Program Files\Sublime Text 2\sublime_text.exe" $1 -new_console:s50H
 st="C:\Program Files (x86)\Atlassian\SourceTree\SourceTree.exe"
+j=jekyll $*
