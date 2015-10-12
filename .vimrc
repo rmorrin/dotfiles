@@ -1,6 +1,7 @@
 set backspace=indent,eol,start                  " make that backspace key work the way it should
 filetype indent on                              " activates indenting for files
 set autoindent                                  " auto indenting
+set nowrap                                      " don't wrap lines
 set number                                      " line numbers
 set nobackup                                    " get rid of anoying ~file
 set laststatus=2                                " make the last line where the status is two lines deep so you can see status always
@@ -22,6 +23,7 @@ set noshowmode                                  " disable showmode, vim-airline 
 set term=xterm                                  "
 set t_Co=256                                    "
 set viminfo=                                    "
+set encoding=utf-8
 let &t_AB="\e[48;5;%dm"                         "
 let &t_AF="\e[38;5;%dm"                         "
 let g:hybrid_use_XResources = 1                 "
