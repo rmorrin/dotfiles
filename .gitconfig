@@ -13,7 +13,7 @@
 [merge]
 	tool = kdiff3
 [mergetool "kdiff3"]
-	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+	path = C:/Program Files/KDiff3/kdiff3.exe
 [mergetool "vsdiffmerge"]
 	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
 	keepbackup = false
@@ -21,8 +21,7 @@
 [diff]
 	guitool = kdiff3
 [difftool "kdiff3"]
-	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
-	cmd = \"C:/Program Files (x86)/KDiff3/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+	path = C:/Program Files/KDiff3/kdiff3.exe
 [difftool "vsdiffmerge"]
 	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
 	keepbackup = false
