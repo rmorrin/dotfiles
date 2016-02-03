@@ -1,25 +1,30 @@
 "*":
-  editor:
-    invisibles:
-      cr: ""
-      eol: ""
-    showInvisibles: true
-    fontFamily: "Source Code Pro"
   core:
-    themes: [
-      "atom-dark-ui"
-      "base16-tomorrow-dark-theme"
-    ]
     disabledPackages: [
       "wrap-guide"
     ]
-  tabs:
-    usePreviewTabs: true
-  welcome:
-    showOnStartup: false
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    invisibles:
+      cr: " "
+      eol: " "
+    showInvisibles: true
   "exception-reporting":
     userId: "23a7144a-fd9b-602e-2d89-2154569fbb7d"
-  "linter-eslint": {}
   linter:
-    statusIconScope: "File"
+    errorPanelHeight: 145
     showErrorPanel: false
+    statusIconScope: "File"
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    useGlobalEslint: true
+  "one-dark-ui": {}
+  tabs:
+    usePreviewTabs: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
