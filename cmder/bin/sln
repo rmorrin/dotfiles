@@ -2,7 +2,9 @@
 
 sln=$(ls -a | grep -E '\.sln' | head -n1)
 
-os="$(./getos.sh)"
+scriptPath=$(which $0)
+
+os="$("$(dirname $scriptPath)"/getos)"
 
 if [ -n "$sln" ]; then
 	if [ "$os" == "Windows" ]; then

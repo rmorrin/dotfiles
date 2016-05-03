@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var http  = require('http');
 
 var colourEscape = '\033[1;36m';
@@ -7,6 +9,7 @@ http.request({
   path: '/v0/random'
 }, function (res) {
   var data = '';
+
 
   res.on('data', function (chunk) {
     data += chunk;

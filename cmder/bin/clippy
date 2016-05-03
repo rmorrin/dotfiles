@@ -10,8 +10,7 @@
 #
 #  $ echo "copy this to the clipboard" | setclip
 #  $ tail -n 100 logfile.txt | setclip
-
-os="$(./getos.sh)"
+os="$("$(dirname -- $0)/getos")"
 
 getclip () {
     if [ "$os" = "Mac" ]; then

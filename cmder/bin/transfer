@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 # include cross-platform clipboard functions
-. "$(dirname -- $0)/clippy.sh"
+scriptPath="$(which $0)"
+echo "scriptPath is $scriptPath"
+dirName="$(dirname -- $scriptPath)"
+echo "dirname is $dirName"
+
+source "$(dirname -- $0)/clippy"
+
 
 # upload file, grab returned url
 output=$(curl -s --upload-file $1 https://transfer.sh/${1##*[/|\\]})

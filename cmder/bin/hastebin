@@ -8,7 +8,7 @@
 #    http://www.linux-magazine.com/Online/Blogs/Productivity-Sauce/Hastebin-An-Open-Source-Alternative-to-Pastebin
 
 # include cross-platform clipboard functions
-. "$(dirname -- $0)/clippy.sh"
+. "$(dirname -- $0)/clippy"
 
 # colour escapes
 cyan='\033[1;36m'
