@@ -2,6 +2,7 @@
   core:
     disabledPackages: [
       "wrap-guide"
+      "whitespace"
     ]
     themes: [
       "one-dark-ui"
@@ -15,6 +16,7 @@
     showInvisibles: true
   "exception-reporting":
     userId: "23a7144a-fd9b-602e-2d89-2154569fbb7d"
+  gist: {}
   linter:
     errorPanelHeight: 145
     showErrorPanel: false

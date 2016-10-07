@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
 # include cross-platform clipboard functions
-scriptPath="$(which $0)"
-echo "scriptPath is $scriptPath"
-dirName="$(dirname -- $scriptPath)"
-echo "dirname is $dirName"
-
 source "$(dirname -- $0)/clippy"
 
 
