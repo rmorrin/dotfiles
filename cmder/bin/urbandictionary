@@ -1,15 +1,21 @@
 #!/usr/bin/env node
 
 var http  = require('http');
-
 var colourEscape = '\033[1;36m';
+
+var pathName = '/v0/random';
+var args = process.argv.slice(2);
+
+// check if we have a word to define
+if (args[0]) {
+    pathName = '/v0/define?term=' + args[0];
+}
 
 http.request({
   hostname: 'api.urbandictionary.com',
-  path: '/v0/random'
+  path: pathName
 }, function (res) {
   var data = '';
-
 
   res.on('data', function (chunk) {
     data += chunk;
