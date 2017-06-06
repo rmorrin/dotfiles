@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Controls the font family.
+    "editor.fontFamily": "Source Code Pro, 'Courier New', monospace",
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 14,
+
+    // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+    "editor.renderWhitespace": "all",
+
+    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
+    "explorer.openEditors.visible": 0,
+
+    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
+    "window.menuBarVisibility": "default",
+
+    // Specifies the color theme used in the workbench.
+    "workbench.colorTheme": "Material",
+
+    // When enabled, will show the Welcome page on startup.
+    "workbench.welcome.enabled": false,
+
+    // Specifies the icon theme used in the workbench.
+    "workbench.iconTheme": "seti",
+
+    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+    "window.zoomLevel": 0
+}
