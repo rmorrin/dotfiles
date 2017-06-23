@@ -14,7 +14,7 @@ function start_agent {
     #echo succeeded
     chmod 600 "${SSH_ENV}"
     . "${SSH_ENV}" > /dev/null
-    /usr/bin/ssh-add;
+    find ~/.ssh/ -type f -exec grep -l "PRIVATE" {} \; | xargs ssh-add &> /dev/null; # Adds all private keys in ~/.ssh directory
 }
 
 # Source SSH settings, if applicable
