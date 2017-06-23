@@ -1,0 +1,38 @@
+# fixing common commands, ls etc
+alias la='ls -A'
+alias ll='ls -AlF'
+alias ii='explorer'
+alias now='echo $(curl -s "http://www.timeapi.org/gmt/now?\a%20\b%20\d%20\k:\M:\S%20\Y")'
+alias joke='curl https://icanhazdadjoke.com/ && echo'
+
+# git aliases
+alias gs='git status -sb'
+alias gst='git stash'
+alias gd='git diff'
+alias ga='git add'
+alias gpu='git push'
+alias gpl='git pull'
+alias gdc='git diff --cached'
+alias gdt='git difftool'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gl='git lg -15'
+alias gll='git lg'
+alias gla='git lg --all'
+
+# applications (windows)
+if [ "$(~/bin/getos)" = "Windows" ]; then
+    alias st='launchexe "C:\Program Files (x86)\Atlassian\SourceTree\SourceTree.exe"'
+    alias vs12='launchexe "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"'
+    alias vs13='launchexe "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"'
+    alias vs15='launchexe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"'
+    alias gx='launchexe "C:\Program Files (x86)\GitExtensions\GitExtensions.exe"'
+    alias gk='launchexe "C:\Users\ryan.morrin\AppData\Local\gitkraken\app-1.9.3\gitkraken.exe"'
+    alias killssh='taskkill //f //im ssh-agent.exe'
+fi
+
+# helper functions
+function launchexe() {
+    (nohup "$@" &>/dev/null &)
+}
