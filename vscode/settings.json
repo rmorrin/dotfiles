@@ -15,8 +15,14 @@
     // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
     "window.menuBarVisibility": "default",
 
+    // Overrides colors from the currently selected color theme.
+    "workbench.colorCustomizations": {
+        "panel.border": "#1d262a",
+        "sideBar.border": "#1d262a"
+    },
+
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Material",
+    "workbench.colorTheme": "Material Theme",
 
     // When enabled, will show the Welcome page on startup.
     "workbench.welcome.enabled": false,
