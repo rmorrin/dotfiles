@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+# Uses https://github.com/isaacs/gist-cli to create a private gist with the clipboard contents
+
+# include cross-platform clipboard functions
+. "$(dirname -- $0)/clippy"
+
+echo "$(getclip)" | gist -p "$@"

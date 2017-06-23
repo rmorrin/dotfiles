@@ -8,10 +8,10 @@
 # Credit:
 #     http://stackoverflow.com/a/17072017
 
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     echo Mac
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
     echo Linux
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+elif [[ "$(expr substr $(uname -s) 1 10)" =~ MINGW(32|64)_NT ]]; then
     echo Windows
 fi
