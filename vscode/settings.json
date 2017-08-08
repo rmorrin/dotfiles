@@ -22,7 +22,7 @@
     },
 
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Material Theme",
+    "workbench.colorTheme": "Nord",
 
     // When enabled, will show the Welcome page on startup.
     "workbench.welcome.enabled": false,

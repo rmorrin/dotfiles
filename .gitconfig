@@ -2,39 +2,39 @@
 	name = AUTHORNAME
 	email = AUTHOREMAIL
 [core]
-	autocrlf = true
 	editor = vim
 	whitespace = trailing-space,space-before-tab
 	filemode = false
+	safecrlf = warn
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
 [apply]
 	whitespace = fix
 [http]
 	postBuffer = 524288000
 [merge]
 	tool = p4merge
-[mergetool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
 [mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	cmd = 'C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/vsdiffmerge.exe' $LOCAL $REMOTE $BASE $MERGED //m
 	keepbackup = false
 	trustexistcode = true
 [mergetool "p4merge"]
-	path = C:/Program Files/Perforce/p4merge.exe
+	path = 'C:/Program Files/Perforce/p4merge.exe'
 [diff]
 	tool = p4merge
-[difftool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
 [difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	cmd = 'C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/vsdiffmerge.exe' $LOCAL $REMOTE //t
 	keepbackup = false
 	trustexistcode = true
 [difftool "p4merge"]
 	path = C:/Program Files/Perforce/p4merge.exe
+[difftool "winmerge"]
+	cmd = \"C:\\Users\\ryan.morrin\\Dropbox\\Utils\\WinMergePortable\\WinMergePortable.exe\" -e \"$LOCAL\" \"$REMOTE\"
 [push]
 	default = simple
 [color "status"]
-	changed = magenta normal bold
-	untracked = magenta normal bold
+	changed = magenta
+	untracked = magenta
 [alias]
 	lg = log --color --graph --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %an: %s %Cgreen(%cr)' --abbrev-commit
 	pushall = !git remote | xargs -l git push
@@ -42,3 +42,5 @@
 	unstage = reset HEAD --
 [commit]
 	template = C:/Users/Ryan/.gitmessage.txt
+[credential]
+	helper = manager

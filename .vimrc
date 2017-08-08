@@ -19,47 +19,24 @@ set ruler                                       " show the cursor position all t
 set nocompatible                                " vi compatible is LAME
 set background=dark                             " Use colours that work well on a dark background (Console is usually black)
 syntax on                                       " turn syntax highlighting on by default
-set noshowmode                                  " disable showmode, vim-airline will show us this
-set term=xterm                                  "
-set t_Co=256                                    "
-set viminfo=                                    "
-set encoding=utf-8
-let &t_AB="\e[48;5;%dm"                         "
-let &t_AF="\e[38;5;%dm"                         "
-let g:hybrid_use_XResources = 1                 "
-colorscheme hybrid                              "
-let g:airline_theme = 'tomorrow'                "
-let g:airline_powerline_fonts = 1               "
+set encoding=utf-8                              " UTF-8 encoding
+
+" colors
+" set term=xterm                                  "
+" set t_Co=256                                    "
+" let &t_AB="\e[48;5;%dm"                         "
+" let &t_AF="\e[38;5;%dm"                         "
+" let g:hybrid_use_XResources = 1                 "
+" colorscheme hybrid                              "
+
+" airline 
+" let g:airline_theme='tomorrow'                  "
+" let g:airline_powerline_fonts = 1             " populate airline with powerline symbols
+" let g:airline_left_sep = ''                   " disable left airline separator
+" let g:airline_right_sep = ''                  " disable right airline separator
 
 " pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " NERDTree mapping
-:map <F2> :NERDTreeToggle<CR>
-
-" stolen from msysgit vimrc
-"------------------------------------------------------------------------------
-" only do this part when compiled with support for autocommands.
-if has("autocmd")
-    "Set UTF-8 as the default encoding for commit messages
-    autocmd BufReadPre COMMIT_EDITMSG,git-rebase-todo setlocal fileencodings=utf-8
-
-    "Remember the positions in files with some git-specific exceptions"
-    autocmd BufReadPost *
-      \ if line("'\"") > 0 && line("'\"") <= line("$")
-      \           && expand("%") !~ "COMMIT_EDITMSG"
-      \           && expand("%") !~ "ADD_EDIT.patch"
-      \           && expand("%") !~ "addp-hunk-edit.diff"
-      \           && expand("%") !~ "git-rebase-todo" |
-      \   exe "normal g`\"" |
-      \ endif
-
-      autocmd BufNewFile,BufRead *.patch set filetype=diff
-      autocmd BufNewFile,BufRead *.diff set filetype=diff
-
-      autocmd Syntax diff
-      \ highlight WhiteSpaceEOL ctermbg=red |
-      \ match WhiteSpaceEOL /\(^+.*\)\@<=\s\+$/
-
-      autocmd Syntax gitcommit setlocal textwidth=74
-endif " has("autocmd")
+" :map <F2> :NERDTreeToggle<CR>

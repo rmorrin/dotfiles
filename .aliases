@@ -4,6 +4,7 @@ alias ll='ls -AlF'
 alias ii='explorer'
 alias now='echo $(curl -s "http://www.timeapi.org/gmt/now?\a%20\b%20\d%20\k:\M:\S%20\Y")'
 alias joke='curl https://icanhazdadjoke.com/ && echo'
+alias tct='tiny-care-terminal'
 
 # git aliases
 alias gs='git status -sb'
