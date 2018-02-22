@@ -3,7 +3,7 @@
 	email = AUTHOREMAIL
 [core]
 	editor = vim
-	whitespace = trailing-space,space-before-tab
+	whitespace = trailing-space,space-before-tab,cr-at-eol
 	filemode = false
 	safecrlf = warn
 [pager]
@@ -19,7 +19,7 @@
 	keepbackup = false
 	trustexistcode = true
 [mergetool "p4merge"]
-	path = 'C:/Program Files/Perforce/p4merge.exe'
+	path = C:\\Program Files\\Perforce\\p4merge.exe
 [diff]
 	tool = p4merge
 [difftool "vsdiffmerge"]
@@ -27,7 +27,7 @@
 	keepbackup = false
 	trustexistcode = true
 [difftool "p4merge"]
-	path = C:/Program Files/Perforce/p4merge.exe
+	path = C:\\Program Files\\Perforce\\p4merge.exe
 [difftool "winmerge"]
 	cmd = \"C:\\Users\\ryan.morrin\\Dropbox\\Utils\\WinMergePortable\\WinMergePortable.exe\" -e \"$LOCAL\" \"$REMOTE\"
 [push]
@@ -40,6 +40,7 @@
 	pushall = !git remote | xargs -l git push
 	last = log -1 --stat
 	unstage = reset HEAD --
+	purgelocal = "!git branch --merged | grep -v '\\*' | grep -iv 'master' | grep -iv 'develop' | grep -iv 'staging' | xargs -n 1 git branch -d"
 [commit]
 	template = C:/Users/Ryan/.gitmessage.txt
 [credential]

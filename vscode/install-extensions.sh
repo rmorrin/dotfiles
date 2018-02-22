@@ -7,9 +7,6 @@ EXTENSIONS=(
   "dbaeumer.vscode-eslint" \
   "jchannon.csharpextensions" \
   "ms-vscode.csharp" \
-  "PeterJausovec.vscode-docker" \
-  "qinjia.seti-icons" \
-  "zhuangtongfa.Material-theme"
 )
 
 for VARIANT in "code" \

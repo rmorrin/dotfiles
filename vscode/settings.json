@@ -12,6 +12,9 @@
     // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
     "explorer.openEditors.visible": 0,
 
+      // Ignore extension recommendations
+    "extensions.ignoreRecommendations": false,
+
     // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
     "window.menuBarVisibility": "default",
 
@@ -25,10 +28,10 @@
     "workbench.colorTheme": "Nord",
 
     // When enabled, will show the Welcome page on startup.
-    "workbench.welcome.enabled": false,
+    "workbench.startupEditor": "none",
 
     // Specifies the icon theme used in the workbench.
-    "workbench.iconTheme": "seti",
+    "workbench.iconTheme": "vs-seti",
 
     // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
     "window.zoomLevel": 0
