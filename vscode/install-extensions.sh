@@ -3,10 +3,26 @@
 # Credit: http://www.growingwiththeweb.com/2016/06/syncing-vscode-extensions.html
 
 EXTENSIONS=(
+  "Angular.ng-template" \
   "arcticicestudio.nord-visual-studio-code" \
-  "dbaeumer.vscode-eslint" \
+  "christian-kohler.path-intellisense" \
+  "eamodio.gitlens" \
+  "EditorConfig.EditorConfig" \
+  "eg2.vscode-npm-script" \
+  "eriklynd.json-tools" \
+  "esbenp.prettier-vscode" \
+  "infinity1207.angular2-switcher" \
   "jchannon.csharpextensions" \
+  "johnpapa.angular-essentials" \
+  "johnpapa.Angular2" \
+  "johnpapa.vscode-peacock" \
+  "ms-mssql.mssql" \
   "ms-vscode.csharp" \
+  "ms-vscode.vscode-typescript-tslint-plugin" \
+  "msjsdiag.debugger-for-chrome" \
+  "natewallace.angular2-inline" \
+  "nrwl.angular-console" \
+  "qinjia.seti-icons" \
 )
 
 for VARIANT in "code" \

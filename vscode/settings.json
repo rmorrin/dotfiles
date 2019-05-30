@@ -1,38 +1,141 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Controls the font family.
-    "editor.fontFamily": "Source Code Pro, 'Courier New', monospace",
+    // Enable/disable navigation breadcrumbs
+    "breadcrumbs.enabled": true,
 
-    // Controls the font size in pixels.
-    "editor.fontSize": 14,
+    // Controls the font size in pixels
+    "editor.fontSize": 15,
 
-    // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+    // Controls whether the minimap is shown
+    "editor.minimap.enabled": true,
+
+    // Limit the width of the minimap to render at most a certain number of columns
+    "editor.minimap.maxColumn": 80,
+
+    // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words
     "editor.renderWhitespace": "all",
 
-    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
+    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty
+    "editor.rulers": [ 140 ],
+
+    // When enabled, Emmet abbreviations are expanded when pressing TAB
+    "emmet.triggerExpansionOnTab": true,
+
+    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane
     "explorer.openEditors.visible": 0,
 
-      // Ignore extension recommendations
-    "extensions.ignoreRecommendations": false,
-
-    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
-    "window.menuBarVisibility": "default",
-
-    // Overrides colors from the currently selected color theme.
-    "workbench.colorCustomizations": {
-        "panel.border": "#1d262a",
-        "sideBar.border": "#1d262a"
+    // Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/obj": true
     },
 
-    // Specifies the color theme used in the workbench.
+    // Whether auto refreshing is enabled
+    "git.autorefresh": false,
+
+    // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu)
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen
+    "window.menuBarVisibility": "default",
+
+    // Specifies the color theme used in the workbench
     "workbench.colorTheme": "Nord",
 
-    // When enabled, will show the Welcome page on startup.
+    // Specifies the icon theme used in the workbench or 'null' to not show any file icons
+    "workbench.iconTheme": "seti",
+
+    // When enabled, will show the Welcome page on startup
     "workbench.startupEditor": "none",
 
-    // Specifies the icon theme used in the workbench.
-    "workbench.iconTheme": "vs-seti",
+    // Controls the visibility of the status bar at the bottom of the workbench
+    "workbench.statusBar.visible": true,
 
-    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
-    "window.zoomLevel": 0
+    // Specifies whether to provide a blame annotation for the current line, by default
+    "gitlens.currentLine.enabled": false,
+
+    // Specifies whether to provide an authors code lense, showing number of authors of the file or code black and the most prominent author (if there is more than one)
+    "gitlens.codeLens.authors.enabled": false,
+
+    // Specifies whether to provide a recent change code lense, showing the author and date of the most recent commit for the file or code block
+    "gitlens.codeLens.recentChange.enabled": false,
+
+    // Your favorite colors
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#b52e31"
+        },
+        {
+            "name": "Auth0 Orange",
+            "value": "#eb5424"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "C# Purple",
+            "value": "#68217A"
+        },
+        {
+            "name": "Gatsby Purple",
+            "value": "#639"
+        },
+        {
+            "name": "Java Blue-Gray",
+            "value": "#557c9b"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#00b3e6"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "Connect Pink",
+            "value": "#c02091"
+        },
+        {
+            "name": "Connect Blue",
+            "value": "#00b7f1"
+        }
+    ],
+
+    // Maxmium amount of characters per line (0 = disable)
+    "html.format.wrapLineLength": 0,
+
+    // TypeScript specific settings
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+
+    // LESS specific settings
+    "[less]": {
+        "editor.formatOnSave": false
+    }
 }
