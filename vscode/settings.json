@@ -38,24 +38,6 @@
     // Whether auto refreshing is enabled
     "git.autorefresh": false,
 
-    // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu)
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-
-    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen
-    "window.menuBarVisibility": "default",
-
-    // Specifies the color theme used in the workbench
-    "workbench.colorTheme": "Nord",
-
-    // Specifies the icon theme used in the workbench or 'null' to not show any file icons
-    "workbench.iconTheme": "seti",
-
-    // When enabled, will show the Welcome page on startup
-    "workbench.startupEditor": "none",
-
-    // Controls the visibility of the status bar at the bottom of the workbench
-    "workbench.statusBar.visible": true,
-
     // Specifies whether to provide a blame annotation for the current line, by default
     "gitlens.currentLine.enabled": false,
 
@@ -64,6 +46,15 @@
 
     // Specifies whether to provide a recent change code lense, showing the author and date of the most recent commit for the file or code block
     "gitlens.codeLens.recentChange.enabled": false,
+
+    // Maxmium amount of characters per line (0 = disable)
+    "html.format.wrapLineLength": 0,
+
+    // Specifies whether Peacock should affect the status bar
+    "peacock.affectStatusBar": false,
+
+    // Specifies whether Peacock should affect the activity bar
+    "peacock.affectActivityBar": false,
 
     // Your favorite colors
     "peacock.favoriteColors": [
@@ -86,6 +77,10 @@
         {
             "name": "Gatsby Purple",
             "value": "#639"
+        },
+        {
+            "name": "Go Cyan",
+            "value": "#5dc9e2"
         },
         {
             "name": "Java Blue-Gray",
@@ -125,17 +120,57 @@
         }
     ],
 
-    // Maxmium amount of characters per line (0 = disable)
-    "html.format.wrapLineLength": 0,
+    // Automatically sort imports on save
+    "sort-imports.on-save": false,
 
-    // TypeScript specific settings
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+    // Default sorting style. Options are eslint, module, module-scoped, module-compact
+    "sort-imports.default-sort-style": "module-compact",
+
+    // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu)
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen
+    "window.menuBarVisibility": "default",
+
+    // Specifies the color theme used in the workbench
+    "workbench.colorTheme": "Night Owl (No Italics)",
+
+    "workbench.colorCustomizations": {
+        "[Night Owl (No Italics)]": {
+          "activityBar.background": "#000C1D",
+          "activityBar.border": "#102a44",
+          "sideBar.background": "#001122",
+          "sideBar.border": "#102a44",
+          "sideBar.foreground": "#8BADC1",
+          "editorIndentGuide.activeBackground": "#7E97AC77",
+        }
+    },
+
+    // Controls whether opened editors show as previews. Preview editors are reused until they are pinned (e.g. via double click or editing)
+    "workbench.editor.enablePreview": false,
+
+    // Specifies the icon theme used in the workbench or 'null' to not show any file icons
+    "workbench.iconTheme": "material-icon-theme",
+
+    // When enabled, will show the Welcome page on startup
+    "workbench.startupEditor": "none",
+
+    // Controls the visibility of the status bar at the bottom of the workbench
+    "workbench.statusBar.visible": true,
+
+    // HTML specific settings
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
     },
 
     // LESS specific settings
     "[less]": {
-        "editor.formatOnSave": false
-    }
+        "editor.formatOnSave": true
+    },
+
+    // TypeScript specific settings
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
 }

@@ -3,6 +3,7 @@
 # Credit: http://www.growingwiththeweb.com/2016/06/syncing-vscode-extensions.html
 
 EXTENSIONS=(
+  "amatiasq.sort-imports" \
   "Angular.ng-template" \
   "arcticicestudio.nord-visual-studio-code" \
   "christian-kohler.path-intellisense" \
@@ -16,13 +17,15 @@ EXTENSIONS=(
   "johnpapa.angular-essentials" \
   "johnpapa.Angular2" \
   "johnpapa.vscode-peacock" \
-  "ms-mssql.mssql" \
   "ms-vscode.csharp" \
   "ms-vscode.vscode-typescript-tslint-plugin" \
   "msjsdiag.debugger-for-chrome" \
   "natewallace.angular2-inline" \
   "nrwl.angular-console" \
+  "PKief.material-icon-theme" \
   "qinjia.seti-icons" \
+  "sdras.night-owl" \
+  "stringham.move-ts" \
 )
 
 for VARIANT in "code" \
