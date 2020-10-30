@@ -11,16 +11,32 @@ alias gs='git status -sb'
 alias gst='git stash'
 alias gd='git diff'
 alias ga='git add'
+
 alias gpu='git push'
+__git_complete gpu _git_push
+
 alias gpl='git pull'
 alias gdc='git diff --cached'
 alias gdt='git difftool'
 alias gc='git commit'
 alias gca='git commit -a'
+alias gb='git branch'
+
 alias gco='git checkout'
+__git_complete gco _git_checkout
+
 alias gl='git lg -15'
 alias gll='git lg'
 alias gla='git lg --all'
+
+# docker aliases
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcub='docker-compose up --build'
+alias dcd='docker-compose down'
+alias dcs='docker-compose stop'
+alias dcr='docker-compose restart'
+alias dps="docker ps --format '{{.ID}} ~ {{.Names}} ~ {{.Status}} ~ {{.Image}}'"
 
 # applications (windows)
 if [ "$(~/bin/getos)" = "Windows" ]; then

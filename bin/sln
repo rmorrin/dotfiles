@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sln=$(find . -maxdepth 2 -name '*.sln' | head -n1)
+sln=$(find $(pwd) -maxdepth 2 -name '*.sln' | head -n1)
 
 scriptPath=$(which $0)
 
@@ -17,6 +17,8 @@ if [ -n "$sln" ]; then
 		else
 			"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe" "${sln}" &
 		fi
+	elif [ "$os" = "Mac" ]; then
+		open -na "Rider.app" --args "${sln}"
 	else
 		echo "No handler found for .sln files"
 	fi
